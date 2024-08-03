@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <title>Churn Prediction</title>
+</head>
+<body>
+<div class="container">
+    <h2 class="text-center">Churn Prediction</h2>
+    <form method="POST" action="/">
+        <div class="form-group">
+            <label for="query1">SeniorCitizen:</label>
+            <input type="text" class="form-control" id="query1" name="query1" value="{{ query1 }}">
+        </div>
+        <div class="form-group">
+            <label for="query2">MonthlyCharges:</label>
+            <input type="text" class="form-control" id="query2" name="query2" value="{{ query2 }}">
+        </div>
+        <div class="form-group">
+            <label for="query3">TotalCharges:</label>
+            <input type="text" class="form-control" id="query3" name="query3" value="{{ query3 }}">
+        </div>
+        <div class="form-group">
+            <label for="query4">Gender:</label>
+            <input type="text" class="form-control" id="query4" name="query4" value="{{ query4 }}">
+        </div>
+        <div class="form-group">
+            <label for="query5">Partner:</label>
+            <input type="text" class="form-control" id="query5" name="query5" value="{{ query5 }}">
+        </div>
+        <div class="form-group">
+            <label for="query6">Dependents:</label>
+            <input type="text" class="form-control" id="query6" name="query6" value="{{ query6 }}">
+        </div>
+        <div class="form-group">
+            <label for="query7">PhoneService:</label>
+            <input type="text" class="form-control" id="query7" name="query7" value="{{ query7 }}">
+        </div>
+        <div class="form-group">
+            <label for="query8">MultipleLines:</label>
+            <input type="text" class="form-control" id="query8" name="query8" value="{{ query8 }}">
+        </div>
+        <div class="form-group">
+            <label for="query9">InternetService:</label>
+            <input type="text" class="form-control" id="query9" name="query9" value="{{ query9 }}">
+        </div>
+        <div class="form-group">
+            <label for="query10">OnlineSecurity:</label>
+            <input type="text" class="form-control" id="query10" name="query10" value="{{ query10 }}">
+        </div>
+        <div class="form-group">
+            <label for="query11">OnlineBackup:</label>
+            <input type="text" class="form-control" id="query11" name="query11" value="{{ query11 }}">
+        </div>
+        <div class="form-group">
+            <label for="query12">DeviceProtection:</label>
+            <input type="text" class="form-control" id="query12" name="query12" value="{{ query12 }}">
+        </div>
+        <div class="form-group">
+            <label for="query13">TechSupport:</label>
+            <input type="text" class="form-control" id="query13" name="query13" value="{{ query13 }}">
+        </div>
+        <div class="form-group">
+            <label for="query14">StreamingTV:</label>
+            <input type="text" class="form-control" id="query14" name="query14" value="{{ query14 }}">
+        </div>
+        <div class="form-group">
+            <label for="query15">StreamingMovies:</label>
+            <input type="text" class="form-control" id="query15" name="query15" value="{{ query15 }}">
+        </div>
+        <div class="form-group">
+            <label for="query16">Contract:</label>
+            <input type="text" class="form-control" id="query16" name="query16" value="{{ query16 }}">
+        </div>
+        <div class="form-group">
+            <label for="query17">PaperlessBilling:</label>
+            <input type="text" class="form-control" id="query17" name="query17" value="{{ query17 }}">
+        </div>
+        <div class="form-group">
+            <label for="query18">PaymentMethod:</label>
+            <input type="text" class="form-control" id="query18" name="query18" value="{{ query18 }}">
+        </div>
+        <div class="form-group">
+            <label for="query19">Tenure:</label>
+            <input type="text" class="form-control" id="query19" name="query19" value="{{ query19 }}">
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+    <div class="mt-4">
+        <h4>{{ output1 }}</h4>
+        <h4>{{ output2 }}</h4>
+    </div>
+</div>
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</body>
+</html>
